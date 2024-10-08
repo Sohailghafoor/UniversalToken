@@ -7,7 +7,8 @@ module.exports = async function(callback) {
     const swaps = await Swaps.new(false, {
       from: from,
     });
-    
+  //console.log("Swaps deployed at: " + swaps.address);
+
     console.log("Swaps deployed at: " + swaps.address);
 
     callback();
